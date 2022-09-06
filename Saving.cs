@@ -12,14 +12,23 @@ namespace Person
         {
             Console.WriteLine("Opening of new saving account");
         }
+        public static int bal = 0;
+
+        public int balance
+        {
+            get { return bal; }
+            set { bal = value; }
+        }
+
         public void CalInterest()
         {
-            throw new NotImplementedException();
+            double interest = bal * (0.04);
+            Console.WriteLine($"interest: {interest}");
         }
 
         public void PrintBalance()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"Balance: {bal}");
         }
 
     }

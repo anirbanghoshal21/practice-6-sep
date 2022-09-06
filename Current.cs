@@ -14,12 +14,13 @@ namespace Person
         }
         public void CalInterest()
         {
-            throw new NotImplementedException();
+            double interest = bal * (0.02);
+            Console.WriteLine($"interest: {interest}");
         }
 
         public void PrintBalance()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"Balance: {bal}");
         }
     }
 }
